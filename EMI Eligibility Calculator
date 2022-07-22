@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main() {
+printf("*WELCOME TO MAK BANK*\n\n This is the loan option\n\n");
+float bl,lamt,d,c,e;
+printf("Enter your bank balance: \n");
+scanf("%f",&bl);
+printf("Enter your gross monthly income: \n");
+scanf("%f",&c);
+printf("Enter loan amount (Estmd):\n ");
+scanf("%f",&lamt);
+d = lamt - bl;
+e = lamt/(c*36);
+if (d<=500000&&e<=12)
+printf ("Congratulations!! You are eligible for a loan\n\n\n");
+else
+printf("Sorry You are not eligible for a loan\n\n\n");
+printf("*THANK YOU FOR CHOOSING MAK BANK AND FUCK YOU*\n\n\n”);
+return 0;
+}
